@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     git \
     unzip \
     xz-utils \
+    s3cmd
     && rm -rf /var/lib/apt/lists/*
 
 # Set environment variables
