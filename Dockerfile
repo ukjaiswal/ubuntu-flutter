@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
     unzip \
     xz-utils \
     s3cmd \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*  /tmp/* /var/tmp/* \
+    && apt-get clean
 
 # Set environment variables
 ENV FLUTTER_VERSION=3.22.0
